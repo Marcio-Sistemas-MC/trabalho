@@ -1,6 +1,6 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 192
-  Top = 125
+  Left = 264
+  Top = 128
   Width = 928
   Height = 480
   Align = alClient
@@ -42,6 +42,7 @@ object frmPrincipal: TfrmPrincipal
       Caption = 'Cadastro'
       object Cliente1: TMenuItem
         Caption = 'Cliente'
+        OnClick = Cliente1Click
       end
       object Fornecedor1: TMenuItem
         Caption = 'Fornecedor'

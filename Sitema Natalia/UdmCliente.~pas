@@ -10,7 +10,6 @@ type
     sdsCadCliente: TSQLDataSet;
     dspCadCliente: TDataSetProvider;
     cdsCadCliente: TClientDataSet;
-    cdsCadClienteCLICODIGO: TIntegerField;
     cdsCadClienteCLINOME: TStringField;
     cdsCadClienteCLIENDERECO: TStringField;
     cdsCadClienteCLIBAIRRO: TStringField;
@@ -22,6 +21,19 @@ type
     cdsCadClienteCLICEP: TStringField;
     cdsCadClienteDTCADASTRO: TSQLTimeStampField;
     cdsCadClienteDTATUALIZACAO: TSQLTimeStampField;
+    cdsCadClienteCLICODIGO: TIntegerField;
+    sdsCadClienteCLICODIGO: TIntegerField;
+    sdsCadClienteCLINOME: TStringField;
+    sdsCadClienteCLIENDERECO: TStringField;
+    sdsCadClienteCLIBAIRRO: TStringField;
+    sdsCadClienteCLICIDADE: TStringField;
+    sdsCadClienteCLIUF: TStringField;
+    sdsCadClienteCLITEL1: TStringField;
+    sdsCadClienteCLITEL2: TStringField;
+    sdsCadClienteCLICELULAR: TStringField;
+    sdsCadClienteCLICEP: TStringField;
+    sdsCadClienteDTCADASTRO: TSQLTimeStampField;
+    sdsCadClienteDTATUALIZACAO: TSQLTimeStampField;
   private
     { Private declarations }
   public

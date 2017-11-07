@@ -1,6 +1,6 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 192
-  Top = 125
+  Left = 264
+  Top = 128
   Width = 928
   Height = 480
   Align = alClient
@@ -92,6 +92,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object Sair1: TMenuItem
       Caption = 'Sair'
+      OnClick = Sair1Click
     end
   end
   object Timer1: TTimer
