@@ -9,6 +9,7 @@ object dmPrincipal: TdmPrincipal
     DriverName = 'Interbase'
     GetDriverFunc = 'getSQLDriverINTERBASE'
     LibraryName = 'dbexpint.dll'
+    LoginPrompt = False
     Params.Strings = (
       'DriverName=Interbase'
       

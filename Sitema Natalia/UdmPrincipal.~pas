@@ -3,10 +3,11 @@ unit UdmPrincipal;
 interface
 
 uses
-  SysUtils, Classes;
+  SysUtils, Classes, DBXpress, DB, SqlExpr;
 
 type
-  TDataModule1 = class(TDataModule)
+  TdmPrincipal = class(TDataModule)
+    sqlConSisComercial: TSQLConnection;
   private
     { Private declarations }
   public
@@ -14,7 +15,7 @@ type
   end;
 
 var
-  DataModule1: TDataModule1;
+  dmPrincipal: TdmPrincipal;
 
 implementation
 

@@ -31,6 +31,7 @@ type
     Timer1: TTimer;
     procedure Timer1Timer(Sender: TObject);
     procedure Cliente1Click(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -79,6 +80,11 @@ begin
     frmCadCliente.Free;
     frmCadCliente := nil;
   end;
+end;
+
+procedure TfrmPrincipal.Sair1Click(Sender: TObject);
+begin
+  close;
 end;
 
 end.

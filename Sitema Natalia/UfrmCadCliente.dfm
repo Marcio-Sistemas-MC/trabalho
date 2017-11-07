@@ -1,6 +1,6 @@
 object frmCadCliente: TfrmCadCliente
-  Left = 205
-  Top = 125
+  Left = 275
+  Top = 198
   Width = 928
   Height = 281
   Caption = 'Cadastro de Cliente'
@@ -22,7 +22,7 @@ object frmCadCliente: TfrmCadCliente
     Top = 8
     Width = 33
     Height = 13
-    Caption = 'C'#243'digo'
+    Caption = 'Código'
     FocusControl = DBEdit1
   end
   object Label2: TLabel
@@ -46,7 +46,7 @@ object frmCadCliente: TfrmCadCliente
     Top = 8
     Width = 81
     Height = 13
-    Caption = 'Data Atualiza'#231#227'o'
+    Caption = 'Data Atualização'
     FocusControl = DBEdit4
   end
   object Label5: TLabel
@@ -54,7 +54,7 @@ object frmCadCliente: TfrmCadCliente
     Top = 56
     Width = 46
     Height = 13
-    Caption = 'Endere'#231'o'
+    Caption = 'Endereço'
     FocusControl = DBEdit5
   end
   object Label6: TLabel
@@ -118,7 +118,7 @@ object frmCadCliente: TfrmCadCliente
     Top = 0
     Width = 137
     Height = 240
-    TabOrder = 10
+    TabOrder = 9
     object btnNovo: TBitBtn
       Left = 16
       Top = 8
@@ -126,6 +126,7 @@ object frmCadCliente: TfrmCadCliente
       Height = 25
       Caption = 'Novo'
       TabOrder = 0
+      OnClick = btnNovoClick
     end
     object btnAlterar: TBitBtn
       Left = 16
@@ -134,6 +135,7 @@ object frmCadCliente: TfrmCadCliente
       Height = 25
       Caption = 'Alterar'
       TabOrder = 1
+      OnClick = btnAlterarClick
     end
     object btnCancelar: TBitBtn
       Left = 16
@@ -142,6 +144,7 @@ object frmCadCliente: TfrmCadCliente
       Height = 25
       Caption = 'Cancelar'
       TabOrder = 2
+      OnClick = btnCancelarClick
     end
     object btnExcluir: TBitBtn
       Left = 16
@@ -150,6 +153,7 @@ object frmCadCliente: TfrmCadCliente
       Height = 25
       Caption = 'Excluir'
       TabOrder = 3
+      OnClick = btnExcluirClick
     end
     object btnSalvar: TBitBtn
       Left = 16
@@ -158,6 +162,7 @@ object frmCadCliente: TfrmCadCliente
       Height = 25
       Caption = 'Salvar'
       TabOrder = 4
+      OnClick = btnSalvarClick
     end
     object btnLocalizar: TBitBtn
       Left = 16
@@ -174,6 +179,7 @@ object frmCadCliente: TfrmCadCliente
       Height = 25
       Caption = 'Sair'
       TabOrder = 6
+      OnClick = btnSairClick
     end
   end
   object DBEdit1: TDBEdit
@@ -184,7 +190,8 @@ object frmCadCliente: TfrmCadCliente
     DataField = 'CLICODIGO'
     DataSource = dtsCadCliente
     ReadOnly = True
-    TabOrder = 1
+    TabOrder = 0
+    OnChange = DBEdit1Change
   end
   object DBEdit2: TDBEdit
     Left = 288
@@ -193,7 +200,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLINOME'
     DataSource = dtsCadCliente
-    TabOrder = 0
+    TabOrder = 12
   end
   object DBEdit3: TDBEdit
     Left = 680
@@ -203,7 +210,7 @@ object frmCadCliente: TfrmCadCliente
     DataField = 'DTCADASTRO'
     DataSource = dtsCadCliente
     ReadOnly = True
-    TabOrder = 11
+    TabOrder = 10
   end
   object DBEdit4: TDBEdit
     Left = 800
@@ -213,7 +220,7 @@ object frmCadCliente: TfrmCadCliente
     DataField = 'DTATUALIZACAO'
     DataSource = dtsCadCliente
     ReadOnly = True
-    TabOrder = 12
+    TabOrder = 11
   end
   object DBEdit5: TDBEdit
     Left = 144
@@ -222,7 +229,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLIENDERECO'
     DataSource = dtsCadCliente
-    TabOrder = 2
+    TabOrder = 1
   end
   object DBEdit6: TDBEdit
     Left = 640
@@ -231,7 +238,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLIBAIRRO'
     DataSource = dtsCadCliente
-    TabOrder = 3
+    TabOrder = 2
   end
   object DBEdit7: TDBEdit
     Left = 144
@@ -240,7 +247,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLICIDADE'
     DataSource = dtsCadCliente
-    TabOrder = 4
+    TabOrder = 3
   end
   object DBEdit8: TDBEdit
     Left = 496
@@ -250,7 +257,7 @@ object frmCadCliente: TfrmCadCliente
     CharCase = ecUpperCase
     DataField = 'CLIUF'
     DataSource = dtsCadCliente
-    TabOrder = 5
+    TabOrder = 4
   end
   object DBEdit9: TDBEdit
     Left = 552
@@ -259,7 +266,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLICEP'
     DataSource = dtsCadCliente
-    TabOrder = 6
+    TabOrder = 5
   end
   object DBEdit10: TDBEdit
     Left = 704
@@ -268,7 +275,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLITEL1'
     DataSource = dtsCadCliente
-    TabOrder = 7
+    TabOrder = 6
   end
   object DBEdit11: TDBEdit
     Left = 144
@@ -277,7 +284,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLICELULAR'
     DataSource = dtsCadCliente
-    TabOrder = 8
+    TabOrder = 7
   end
   object DBEdit12: TDBEdit
     Left = 392
@@ -286,7 +293,7 @@ object frmCadCliente: TfrmCadCliente
     Height = 21
     DataField = 'CLITEL2'
     DataSource = dtsCadCliente
-    TabOrder = 9
+    TabOrder = 8
   end
   object dtsCadCliente: TDataSource
     DataSet = dmCliente.cdsCadCliente
