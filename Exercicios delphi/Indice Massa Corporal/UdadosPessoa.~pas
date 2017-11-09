@@ -1,0 +1,16 @@
+unit UdadosPessoa;
+
+interface
+  Type
+    RdadosPessoa = record
+      altura: double;
+      peso: double;
+      sexo: string;
+      imc: string;
+  end;
+
+  var
+    PdadosPessoa: RdadosPessoa;
+implementation
+
+end.

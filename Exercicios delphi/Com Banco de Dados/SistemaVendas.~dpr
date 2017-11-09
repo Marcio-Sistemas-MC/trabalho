@@ -1,0 +1,13 @@
+program SistemaVendas;
+
+uses
+  Forms,
+  uSistemaVendas in 'uSistemaVendas.pas' {fSistemaVendas};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfSistemaVendas, fSistemaVendas);
+  Application.Run;
+end.

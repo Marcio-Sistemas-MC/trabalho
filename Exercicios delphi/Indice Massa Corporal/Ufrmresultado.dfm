@@ -1,0 +1,150 @@
+object frmResultado: TfrmResultado
+  Left = 192
+  Top = 125
+  Width = 359
+  Height = 278
+  Caption = 'Resultado'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 96
+    Top = 56
+    Width = 117
+    Height = 22
+    Caption = 'Altura: ..........'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Top = 88
+    Width = 114
+    Height = 22
+    Caption = 'Peso:............'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 96
+    Top = 120
+    Width = 114
+    Height = 22
+    Caption = 'Sexo:............'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 96
+    Top = 152
+    Width = 113
+    Height = 22
+    Caption = 'IMC:..............'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbAltura: TLabel
+    Left = 218
+    Top = 56
+    Width = 72
+    Height = 22
+    Caption = 'lbAltura'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbPeso: TLabel
+    Left = 218
+    Top = 88
+    Width = 64
+    Height = 22
+    Caption = 'lbPeso'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbSexo: TLabel
+    Left = 218
+    Top = 120
+    Width = 66
+    Height = 22
+    Caption = 'lbSexo'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbIMC: TLabel
+    Left = 218
+    Top = 152
+    Width = 53
+    Height = 22
+    Caption = 'lbIMC'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbResultado: TLabel
+    Left = 136
+    Top = 200
+    Width = 91
+    Height = 18
+    Caption = 'lbResultado'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 343
+    Height = 41
+    Align = alTop
+    Caption = 'Resutados:'
+    Color = clActiveCaption
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+end
